@@ -1,0 +1,8 @@
+# Dependencies are installed by the profile, never committed.
+node_modules/
+
+# macOS
+.DS_Store
+
+# Logs and local scratch
+*.log

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "模式循环切换（Tab）",
+    "description": "在 Web 输入框用 Tab 正向、Shift+Tab 反向循环切换模式（普通 ↔ 计划），对齐 opencode 的 agent_cycle。"
+  }
+}

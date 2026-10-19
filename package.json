@@ -1,0 +1,53 @@
+{
+  "name": "dsh-plugin-mode-cycle",
+  "version": "0.3.0",
+  "private": true,
+  "description": "Tab and Shift+Tab cycle composer modes (normal <-> plan) in the DSH Web composer, matching opencode's agent_cycle — switching through the official /plan handler directly, so no command row reaches the transcript.",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.1.5-rc.1"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "author": "DrWang1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DrWang1/dsh-plugin-mode-cycle.git"
+  },
+  "homepage": "https://github.com/DrWang1/dsh-plugin-mode-cycle#readme",
+  "bugs": {
+    "url": "https://github.com/DrWang1/dsh-plugin-mode-cycle/issues"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "plan-mode",
+    "keyboard"
+  ],
+  "license": "MIT"
+}

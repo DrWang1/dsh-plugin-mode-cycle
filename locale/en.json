@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Mode Cycle (Tab)",
+    "description": "Tab cycles composer modes forward and Shift+Tab backward (normal <-> plan), the gesture opencode binds as agent_cycle."
+  }
+}

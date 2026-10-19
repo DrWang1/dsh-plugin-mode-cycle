@@ -1,0 +1,5 @@
+# dsh-plugin-mode-cycle — Tab / Shift+Tab cycle composer modes (normal <-> plan),
+# the gesture opencode binds as `agent_cycle` / `agent_cycle_reverse`.
+- insert:
+    - id: mode-cycle
+      name: 'dsh-plugin-mode-cycle'
